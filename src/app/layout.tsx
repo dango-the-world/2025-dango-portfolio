@@ -1,3 +1,5 @@
+import { Footer } from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 import { GlobalStyle, ResetStyle, ThemeProvider } from "@yamada-ui/core";
 import defaultTheme, { defaultConfig } from "@yamada-ui/theme";
 import type { Metadata } from "next";
@@ -20,6 +22,8 @@ export default function RootLayout({
           <GlobalStyle />
 
           {children}
+          <Navigation />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
