@@ -1,11 +1,11 @@
-import { Button } from "@yamada-ui/button";
 import { Box } from "@yamada-ui/layouts";
 import React from "react";
+import { HeroSection } from "./hero_section/HeroSection";
 
 export const TopContents = () => {
   return (
     <Box>
-      <Button>ぼたにょ</Button>
+      <HeroSection />
     </Box>
   );
 };
