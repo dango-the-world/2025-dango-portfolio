@@ -19,7 +19,7 @@ export const ProfileSection = () => {
             <Text fontSize={"2rem"} fontWeight={"bold"} lineHeight={"3rem"}>
               Dango the World
             </Text>
-            <Text>
+            <Text fontSize={"1.1rem"} lineHeight={"2rem"}>
               プログラミング歴3年のくそざこエンジニア。Next.js勉強中。ハッカソンやエンジニア交流イベントでの目撃例が多数ある。
               音楽とグミとゲームで体が構成されている。口癖は、「WEBデザイン難しすぎる」。
             </Text>
