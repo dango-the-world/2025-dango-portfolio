@@ -1,7 +1,8 @@
+import { TopContents } from "@/components/top/TopContents";
 import React from "react";
 
 const page = () => {
-  return <div>page</div>;
+  return <TopContents />;
 };
 
 export default page;
