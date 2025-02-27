@@ -15,7 +15,7 @@ export const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
         >
-          <Image alt="ロゴ" src="logo.png" w="600px" />
+          <Image alt="ロゴ" src="dtw_logo_new.png" w="600px" />
         </motion.div>
       </Box>
     </HeroBackground>

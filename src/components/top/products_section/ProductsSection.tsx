@@ -33,6 +33,14 @@ export const ProductsSection = () => {
   return (
     <MainBackground>
       <Box h={"200vh"}>
+        <Text
+          textAlign={"center"}
+          fontSize={"3rem"}
+          lineHeight={"4rem"}
+          p={"20px"}
+        >
+          PRODUCTS
+        </Text>
         <Box>
           {products.map((item) => (
             <Box
@@ -45,7 +53,7 @@ export const ProductsSection = () => {
               <Image
                 alt={item.title}
                 src={item.image}
-                border={"3px solid #DC4D03"}
+                border={"10px solid #DC4D03"}
                 borderRadius={"50%"}
               />
               <Box

@@ -3,11 +3,18 @@ import Navigation from "@/components/Navigation";
 import { GlobalStyle, ResetStyle, ThemeProvider } from "@yamada-ui/core";
 import defaultTheme, { defaultConfig } from "@yamada-ui/theme";
 import type { Metadata } from "next";
+import { Kosugi_Maru } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Dango the World",
   description: "Dango the Worldのポートフォリオ",
 };
+
+const kosugiMaru = Kosugi_Maru({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
@@ -16,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body>
+      <body className={kosugiMaru.className}>
         <ThemeProvider theme={defaultTheme} config={defaultConfig}>
           <ResetStyle />
           <GlobalStyle />

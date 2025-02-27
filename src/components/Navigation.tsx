@@ -1,15 +1,21 @@
 "use client";
 
 import { Box, VStack } from "@yamada-ui/layouts";
-import Link from "next/link";
 
 const Navigation = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Box
       position="fixed"
       bottom="40px"
       left="10px"
-      height="200px"
+      height="250px"
       display="flex"
       alignItems="center"
       justifyContent="center"
@@ -26,15 +32,42 @@ const Navigation = () => {
           flexDirection: "row",
         }}
       >
-        <Link href="/profile" style={{ fontSize: "lg", fontWeight: "bold" }}>
+        <button
+          onClick={() => scrollToSection("profile")}
+          style={{
+            fontSize: "lg",
+            fontWeight: "bold",
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
           Profile
-        </Link>
-        <Link href="/products" style={{ fontSize: "lg", fontWeight: "bold" }}>
+        </button>
+        <button
+          onClick={() => scrollToSection("products")}
+          style={{
+            fontSize: "lg",
+            fontWeight: "bold",
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
           Products
-        </Link>
-        <Link href="/skills" style={{ fontSize: "lg", fontWeight: "bold" }}>
+        </button>
+        <button
+          onClick={() => scrollToSection("skills")}
+          style={{
+            fontSize: "lg",
+            fontWeight: "bold",
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
           Skills
-        </Link>
+        </button>
       </VStack>
     </Box>
   );

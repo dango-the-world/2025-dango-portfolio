@@ -9,9 +9,15 @@ export const TopContents = () => {
   return (
     <Box>
       <HeroSection />
-      <ProfileSection />
-      <ProductsSection />
-      <SkillsSection />
+      <Box id="profile">
+        <ProfileSection />
+      </Box>
+      <Box id="products">
+        <ProductsSection />
+      </Box>
+      <Box id="skills">
+        <SkillsSection />
+      </Box>
     </Box>
   );
 };
